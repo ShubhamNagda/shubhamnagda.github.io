@@ -1,0 +1,156 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.navigation li {
+    position: relative;
+    display: inline;
+    left: -39px;
+    padding-left: 5px;
+    list-style: none;
+}
+.navigation li :hover{
+    color:rgb(8, 8, 117)
+}
+li a{
+    color:blue;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+}
+#about{
+    position: relative;
+}
+#about h2{
+    position: absolute;
+    left: 5px;
+}
+#about h3{
+    top: 90px;
+    position: absolute;
+    left: 45px;
+    color: yellow;
+    font-size: 25px;
+}
+#about p{
+    position: absolute;
+    left: 45px;
+    top: 123px;
+    font-size: 23px;
+    color:yellowgreen;
+}
+.design1{
+    width: 300px;
+    position: absolute;
+    border-radius: 0px 35px 0px 35px;
+    background-color: yellow;
+    right: 30px;
+    top: 30px;
+    height: 326px;
+}
+.design2{
+    width: 300px;
+    position: absolute;
+    border-radius: 0px 35px 0px 35px;
+    background-color:blue;
+    right: 25px;
+    top: 25px;
+    height: 326px;
+}
+.contact svg{
+    background-color: yellowgreen;
+    border: 6px solid yellow;
+    border-radius: 0px 15px 0px 15px;
+}
+svg{
+    padding: 5px;
+}
+#about img{
+    width: 300px;
+    position: absolute;
+    right: 10px;
+    border-radius: 0px 35px 0px 35px;
+    border-bottom: 5px solid red;
+    border-left: 5px solid red;
+    border-top: 4px solid red;
+    border-right: 4px solid red;
+    top: 15px;
+}
+.svg{
+    position:relative;
+    left: -22px;
+    display: inline;
+    padding-left: 70px;
+    top: 130px;
+
+}
+#skills{
+    position: relative;
+    top:215px;
+    left: 5px;
+}
+
+#skills ul li{
+    /* color: cyan; */
+    list-style: none;
+    font-size: 20px;
+}
+.teckstacks{
+    position: relative;
+    display: inline;
+    top: 250px;
+}
+.teckstacks ul li{
+    list-style: none;
+    display: inline-block;
+    border: 4px solid rgb(34, 33, 33);
+    border-color: red;
+    padding:5px;
+    white-space: 5px;
+    color: cyan;
+    margin: 0px;
+}
+.f{
+    border-radius: 15px 0px 0px 15px;
+}
+.l {
+    border-radius: 0px 15px 15px 0px;
+}
+.hr1{
+    position: relative;
+    top: 215px;
+}
+.hr2{
+    position: relative;
+    top: 300px;
+}
+#projects{
+    position: relative;
+    top:250px;
+}
+#projects ol li , #projects ol li a{
+    list-style:square;
+    color: cyan;
+    text-decoration: none;
+}
+footer{
+    color: red;
+    position: relative;
+    top: 300px;
+    text-align: center;
+}
+.clr1{
+    color: red;
+}
+.clr2{
+    color: yellow;
+}
+.clr3{
+    color:blue;
+}
+.title{
+    color: white;
+    text-decoration: underline yellowgreen;
+}
