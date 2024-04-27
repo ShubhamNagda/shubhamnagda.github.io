@@ -1,9 +1,11 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: black;
 }
+
 .navigation li {
     position: relative;
     display: inline;
@@ -11,37 +13,44 @@ body{
     padding-left: 5px;
     list-style: none;
 }
-.navigation li :hover{
-    color:rgb(8, 8, 117)
+
+.navigation li :hover {
+    color: rgb(8, 8, 117)
 }
-li a{
-    color:blue;
+
+li a {
+    color: blue;
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
 }
-#about{
+
+#about {
     position: relative;
 }
-#about h2{
+
+#about h2 {
     position: absolute;
     left: 5px;
 }
-#about h3{
+
+#about h3 {
     top: 90px;
     position: absolute;
     left: 45px;
     color: yellow;
     font-size: 25px;
 }
-#about p{
+
+#about p {
     position: absolute;
     left: 45px;
     top: 123px;
     font-size: 23px;
-    color:yellowgreen;
+    color: yellowgreen;
 }
-.design1{
+
+.design1 {
     width: 300px;
     position: absolute;
     border-radius: 0px 35px 0px 35px;
@@ -50,24 +59,28 @@ li a{
     top: 30px;
     height: 326px;
 }
-.design2{
+
+.design2 {
     width: 300px;
     position: absolute;
     border-radius: 0px 35px 0px 35px;
-    background-color:blue;
+    background-color: blue;
     right: 25px;
     top: 25px;
     height: 326px;
 }
-.contact svg{
+
+.contact svg {
     background-color: yellowgreen;
     border: 6px solid yellow;
     border-radius: 0px 15px 0px 15px;
 }
-svg{
+
+svg {
     padding: 5px;
 }
-#about img{
+
+#about img {
     width: 300px;
     position: absolute;
     right: 10px;
@@ -78,79 +91,194 @@ svg{
     border-right: 4px solid red;
     top: 15px;
 }
-.svg{
-    position:relative;
+
+.svg {
+    position: relative;
     left: -22px;
     display: inline;
     padding-left: 70px;
     top: 130px;
-
 }
-#skills{
+
+#skills {
     position: relative;
-    top:215px;
+    top: 215px;
     left: 5px;
 }
 
-#skills ul li{
+#skills ul li {
     /* color: cyan; */
     list-style: none;
     font-size: 20px;
 }
-.teckstacks{
+
+.teckstacks {
     position: relative;
     display: inline;
     top: 250px;
 }
-.teckstacks ul li{
+
+.teckstacks ul li {
     list-style: none;
     display: inline-block;
     border: 4px solid rgb(34, 33, 33);
     border-color: red;
-    padding:5px;
+    padding: 5px;
     white-space: 5px;
     color: cyan;
     margin: 0px;
 }
-.f{
+
+.f {
     border-radius: 15px 0px 0px 15px;
 }
+
 .l {
     border-radius: 0px 15px 15px 0px;
 }
-.hr1{
+
+.hr1 {
     position: relative;
     top: 215px;
 }
-.hr2{
+
+.hr2 {
     position: relative;
     top: 300px;
 }
-#projects{
+
+#projects {
     position: relative;
-    top:250px;
+    top: 250px;
 }
-#projects ol li , #projects ol li a{
-    list-style:square;
+
+#projects ol li,
+#projects ol li a {
+    list-style: square;
     color: cyan;
     text-decoration: none;
 }
-footer{
+
+footer {
     color: red;
     position: relative;
     top: 300px;
     text-align: center;
 }
-.clr1{
+
+.clr1 {
     color: red;
 }
-.clr2{
+
+.clr2 {
     color: yellow;
 }
-.clr3{
-    color:blue;
+
+.clr3 {
+    color: blue;
 }
-.title{
+
+.title {
     color: white;
     text-decoration: underline yellowgreen;
+}
+
+@media only screen and (max-width:1055px) {
+    body{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+    }
+    li a {
+        font-size: 15px;
+    }
+    
+    #about h2 {
+        position: static;
+    }
+    
+    #about h3 {
+        position: static;
+    }
+    
+    #about p {
+        position: static;
+    }
+    
+    .design1 {
+        width: 0px;
+        position: static;
+        visibility: hidden;
+        height: 0px;
+    }
+    
+    .design2 {
+        width: 300px;
+        position: absolute;
+        border-radius: 0px 35px 0px 35px;
+        background-color: blue;
+        right: 25px;
+        top: 25px;
+        visibility: hidden;
+        height: 326px;
+    }
+    
+    
+    svg {
+        padding: 0px;
+    }
+    
+    #about img {
+        width: 300px;
+        position:static;
+        right: 10px;
+        border-radius: 0px 35px 0px 35px;
+        border-bottom: 5px solid red;
+        border-left: 5px solid red;
+        border-top: 4px solid red;
+        border-right: 4px solid red;
+        top: 15px;
+    }
+    
+    .svg {
+        position: static;
+        display: inline-flex;
+        flex-wrap: wrap;
+        left: 0px;
+        padding-left: 0px;
+    }
+
+    
+    #skills {
+        position: static;
+    }
+    
+    .teckstacks {
+        position: static;
+    }
+    .teckstacks ul li {
+        display: block;
+        white-space: 5px;
+        color: cyan;
+        margin: 2px;
+        border-radius: 0px;
+    }
+ 
+    .hr1 {
+        position: static;
+    }
+    
+    .hr2 {
+        position: static;
+    }
+    
+    #projects {
+        position: static;
+    }
+    
+    footer {
+        color: red;
+        position: static;
+    }
 }
