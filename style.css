@@ -19,7 +19,7 @@ body {
 }
 
 li a {
-    color: blue;
+    color: white;
     text-decoration: none;
     font-size: larger;
     font-weight: bold;
@@ -175,7 +175,7 @@ footer {
 }
 
 .clr3 {
-    color: blue;
+    color: white;
 }
 
 .title {
@@ -191,7 +191,7 @@ footer {
 
     }
     li a {
-        font-size: 15px;
+        font-size: 16px;
     }
     
     #about h2 {
