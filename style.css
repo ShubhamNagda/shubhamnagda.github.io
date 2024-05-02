@@ -1,284 +1,290 @@
-html {
+html{
     scroll-behavior: smooth;
 }
-
-body {
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.navigation li {
-    position: relative;
-    display: inline;
-    left: -39px;
-    padding-left: 5px;
+:root {
+    --text-clr1: purple;
+    --text-clr2: rgb(31 41 55);
+    --nav-active-clr: rgb(148, 37, 148);
+    --box-shadow-clr: rgb(145, 140, 140);
+    --text-shadow-clr: rgb(192, 75, 192);
+}
+
+div {
+    display: block;
+}
+
+/* ----------------------Navigation -----------------------------------------------------*/
+
+.navigation {
+    display: flex;
     list-style: none;
+    color: var(--text-clr1);
+    justify-content: space-around;
+    box-shadow: 10px 8px 10px var(--box-shadow-clr);
+    padding: 15px;
 }
 
-.navigation li :hover {
-    color: rgb(8, 8, 117)
-}
-
-li a {
-    color: white;
+.navigation li a {
     text-decoration: none;
     font-size: larger;
-    font-weight: bold;
+    font-weight: bolder;
+    text-transform: uppercase;
+    /* text-shadow: 9px 3px 5px var(--text-shadow-clr); */
 }
 
+.navigation li a:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--text-clr1);
+    text-decoration-thickness: 3px;
+}
+
+.navigation li a:active {
+    color: var(--nav-active-clr);
+
+}
+
+/* ----------------------About-----------------------------------------------------*/
 #about {
-    position: relative;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
-#about h2 {
-    position: absolute;
-    left: 5px;
+.username {
+    color: var(--text-clr1);
+    font-size: xx-large;
+    /* text-align: center; */
+    margin-left: 60px;
+    margin-top: 45px;
+    text-decoration: underline;
+    text-decoration-color: var(--nav-active-clr);
+    text-decoration-style: double;
 }
 
-#about h3 {
-    top: 90px;
-    position: absolute;
-    left: 45px;
-    color: yellow;
-    font-size: 25px;
+.bio {
+    color: var(--text-clr2);
+    font-weight: bold;
+    font-size: larger;
+    margin-left: 60px;
+    /* text-align: center; */
+    margin-top: 30px;
 }
 
-#about p {
-    position: absolute;
-    left: 45px;
-    top: 123px;
-    font-size: 23px;
-    color: yellowgreen;
+.profile {
+    margin-top: 40px;
+    width: 200px;
+    border-radius: 156px;
+    box-shadow: 0px 0px 20px 10px var(--box-shadow-clr);
 }
 
-.design1 {
-    width: 300px;
-    position: absolute;
-    border-radius: 0px 35px 0px 35px;
-    background-color: yellow;
-    right: 30px;
-    top: 30px;
-    height: 326px;
+/* ------------------------Social Media -------------------------------------------------- */
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.design2 {
-    width: 300px;
-    position: absolute;
-    border-radius: 0px 35px 0px 35px;
-    background-color: blue;
-    right: 25px;
-    top: 25px;
-    height: 326px;
+.social-media-icon {
+    margin: 20px 55px 0px 55px;
 }
 
-.contact svg {
-    background-color: yellowgreen;
-    border: 6px solid yellow;
-    border-radius: 0px 15px 0px 15px;
+/* ------------------Skills and Qualification -------------------------------- */
+
+#qualifications-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: larger;
 }
 
-svg {
-    padding: 5px;
+#qualifications-list h1 {
+    color: var(--text-clr2);
+    display: block;
+    padding-top: 20px;
 }
 
-#about img {
-    width: 300px;
-    position: absolute;
-    right: 10px;
-    border-radius: 0px 35px 0px 35px;
-    border-bottom: 5px solid red;
-    border-left: 5px solid red;
-    border-top: 4px solid red;
-    border-right: 4px solid red;
-    top: 15px;
+#qualifications-list ul li {
+    list-style-position: inside;
+    margin-left: 60px;
+    padding: 0px 0px 10px 0px;
 }
 
-.svg {
-    position: relative;
-    left: -22px;
+#qualifications-list img {
+    width: 200px;
+    border-radius: 200px;
+}
+
+/* --------------------Tech Stack  ---------------------------- */
+
+#tech {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    font-size: larger;
+}
+
+#tech h1 {
+    margin-bottom: 10px;
+    color: var(--text-clr2);
+}
+
+.card-techstack {
     display: inline;
-    padding-left: 70px;
-    top: 130px;
 }
 
-#skills {
-    position: relative;
-    top: 215px;
-    left: 5px;
-}
-
-#skills ul li {
-    /* color: cyan; */
-    list-style: none;
-    font-size: 20px;
-}
-
-.teckstacks {
-    position: relative;
-    display: inline;
-    top: 250px;
-}
-
-.teckstacks ul li {
-    list-style: none;
-    display: inline-block;
-    border: 4px solid rgb(34, 33, 33);
-    border-color: red;
+.card-techstack span {
+    border: 2px solid var(--text-clr1);
     padding: 5px;
-    white-space: 5px;
-    color: cyan;
-    margin: 0px;
+    color: var(--text-clr2);
 }
 
-.f {
-    border-radius: 15px 0px 0px 15px;
-}
-
-.l {
-    border-radius: 0px 15px 15px 0px;
-}
-
-.hr1 {
-    position: relative;
-    top: 215px;
-}
-
-.hr2 {
-    position: relative;
-    top: 300px;
-}
-
+/*  -------------Projects ------------------------------------- */
 #projects {
-    position: relative;
-    top: 250px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: larger;
 }
 
-#projects ol li,
-#projects ol li a {
-    list-style: square;
-    color: cyan;
-    text-decoration: none;
+#projects h1 {
+    color: var(--text-clr2);
+    margin-left: 48px;
 }
+
+#projects ul li a {
+    margin-left: 280px;
+
+}
+/* --------------Footer ----------------------------------------- */
 
 footer {
-    color: red;
-    position: relative;
-    top: 300px;
+    margin-top: 30px;
+}
+
+footer h1 {
     text-align: center;
-}
+    color: var(--text-clr2);
 
-.clr1 {
-    color: red;
 }
-
-.clr2 {
-    color: yellow;
-}
-
-.clr3 {
-    color: white;
-}
-
-.title {
-    color: white;
-    text-decoration: underline yellowgreen;
-}
-
-@media only screen and (max-width:1055px) {
-    body{
-        align-items: center;
-        text-align: center;
+/* ___________MOBILE________________________________________________ */
+@media only screen and (max-width:800px){   
+    /* ----------------------Navigation -----------------------------------------------------*/
+    
+    .navigation {
+        width: 120vw;
+    }
+    
+    /* ----------------------About-----------------------------------------------------*/   
+    .username {
+        color: var(--text-clr1);
+        font-size: large;
+        /* text-align: center; */
+        margin-left: 15px;
+        margin-top: 60px;
+        text-decoration: underline;
+        text-decoration-color: var(--nav-active-clr);
+        text-decoration-style: double;
+    }
+    
+    .bio {
+        color: var(--text-clr2);
+        font-weight: bold;
+        font-size:smaller;
+        margin-left: 15px;
+        /* text-align: center; */
+        margin-top: 10px;
+    }
+    
+    .profile {
+        margin-top: 50px;
+        width: 140px;
+        margin-left: 15px;
+        border-radius: 156px;
+        box-shadow: 0px 0px 20px 10px var(--box-shadow-clr);
+    }
+    
+    /* ------------------------Social Media -------------------------------------------------- */
+    
+    .social-media-icon {
+        margin: 20px 11px 0px 11px;
+    }
+    
+    /* ------------------Skills and Qualification -------------------------------- */
+    
+    #qualifications-list {
+        display: flex;
         justify-content: center;
-
-    }
-    li a {
-        font-size: 16px;
+        margin-top: 20px;
+        font-size: medium;
     }
     
-    #about h2 {
-        position: static;
+    #qualifications-list img {
+        width: 140px;
+        border-radius: 200px;
     }
     
-    #about h3 {
-        position: static;
+    /* --------------------Tech Stack  ---------------------------- */
+    
+    #tech {
+        font-size: medium;
     }
     
-    #about p {
-        position: static;
+    #tech h1 {
+        margin-bottom: 10px;
+        color: var(--text-clr2);
     }
     
-    .design1 {
-        width: 0px;
-        position: static;
-        visibility: hidden;
-        height: 0px;
+    .card-techstack {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
     }
     
-    .design2 {
-        width: 300px;
-        position: absolute;
-        border-radius: 0px 35px 0px 35px;
-        background-color: blue;
-        right: 25px;
-        top: 25px;
-        visibility: hidden;
-        height: 326px;
+    .card-techstack span {
+        border: 2px solid var(--text-clr1);
+        padding: 5px;
+        color: var(--text-clr2);
     }
     
-    
-    svg {
-        padding: 0px;
-    }
-    
-    #about img {
-        width: 300px;
-        position:static;
-        right: 10px;
-        border-radius: 0px 35px 0px 35px;
-        border-bottom: 5px solid red;
-        border-left: 5px solid red;
-        border-top: 4px solid red;
-        border-right: 4px solid red;
-        top: 15px;
-    }
-    
-    .svg {
-        position: static;
-        display: inline-flex;
-        flex-wrap: wrap;
-        left: 0px;
-        padding-left: 0px;
-    }
-
-    
-    #skills {
-        position: static;
-    }
-    
-    .teckstacks {
-        position: static;
-    }
-    .teckstacks ul li {
-        display: block;
-        white-space: 5px;
-        color: cyan;
-        margin: 2px;
-        border-radius: 0px;
-    }
- 
-    .hr1 {
-        position: static;
-    }
-    
-    .hr2 {
-        position: static;
-    }
-    
+    /*  -------------Projects ------------------------------------- */
     #projects {
-        position: static;
+        display: block;
+        font-size: medium;
     }
+    
+    #projects ul li a {
+        color: navy;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        margin-left: 60px;
+        font-size: larger;
+    
+    }
+    
+    /* --------------Footer ----------------------------------------- */
     
     footer {
-        color: red;
-        position: static;
+        margin-top: 0px;
+    }
+    hr{
+        width: 125vw;
+    }
+    
+    footer h1 {
+        text-align: center;
+        justify-content: center;
+        color: var(--text-clr2);
+        align-items: center;
+        margin-left:50px ;
     }
 }
