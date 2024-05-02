@@ -180,43 +180,46 @@ footer h1 {
 
 }
 /* ___________MOBILE________________________________________________ */
+body{
+    margin: 0;
+    padding: 0;
+}
 @media only screen and (max-width:800px){   
     /* ----------------------Navigation -----------------------------------------------------*/
     
     .navigation {
-        width: 120vw;
+        width: 100vw;
+        padding: 10px;
     }
     
-    /* ----------------------About-----------------------------------------------------*/   
-    .username {
-        color: var(--text-clr1);
-        font-size: large;
-        /* text-align: center; */
-        margin-left: 15px;
-        margin-top: 60px;
-        text-decoration: underline;
-        text-decoration-color: var(--nav-active-clr);
-        text-decoration-style: double;
+    .navigation li a {
+        text-decoration: none;
+        font-size: medium;
+    }
+    
+    /* ----------------------About-----------------------------------------------------*/
+    #about {
+        display: flex;
+        flex-direction: column;
     }
     
     .bio {
         color: var(--text-clr2);
         font-weight: bold;
-        font-size:smaller;
-        margin-left: 15px;
+        font-size: medium;
+        margin-left: 60px;
         /* text-align: center; */
-        margin-top: 10px;
-    }
-    
-    .profile {
-        margin-top: 50px;
-        width: 140px;
-        margin-left: 15px;
-        border-radius: 156px;
-        box-shadow: 0px 0px 20px 10px var(--box-shadow-clr);
+        margin-top: 30px;
     }
     
     /* ------------------------Social Media -------------------------------------------------- */
+    
+    #social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     
     .social-media-icon {
         margin: 20px 11px 0px 11px;
@@ -228,6 +231,19 @@ footer h1 {
         display: flex;
         justify-content: center;
         margin-top: 20px;
+    }
+    
+    #qualifications-list h1 {
+        color: var(--text-clr2);
+        display: block;
+        padding-top: 20px;
+        font-size: larger;
+    }
+    
+    #qualifications-list ul li {
+        list-style-position: inside;
+        margin-left: 20px;
+        padding: 0px 0px 10px 0px;
         font-size: medium;
     }
     
@@ -238,57 +254,46 @@ footer h1 {
     
     /* --------------------Tech Stack  ---------------------------- */
     
-    #tech {
-        font-size: medium;
-    }
-    
     #tech h1 {
         margin-bottom: 10px;
         color: var(--text-clr2);
+        font-size: larger;
     }
     
     .card-techstack {
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-    
-    .card-techstack span {
-        border: 2px solid var(--text-clr1);
-        padding: 5px;
-        color: var(--text-clr2);
+     margin: 30px;
+     display: block;
     }
     
     /*  -------------Projects ------------------------------------- */
     #projects {
         display: block;
-        font-size: medium;
+        justify-content: center;
+        margin-top: 15px;
     }
     
+    #projects h1 {
+        /* margin-right: 0px; */
+        margin-left: 22PX;
+        text-align: center;
+        font-size: larger;
+    }
     #projects ul li a {
         color: navy;
+        padding-top: 80px;
         text-decoration: none;
-        display: block;
-        padding: 10px;
-        margin-left: 60px;
-        font-size: larger;
+        margin-left: 45px;
     
     }
-    
     /* --------------Footer ----------------------------------------- */
     
     footer {
-        margin-top: 0px;
+        margin-top: 30px;
+        width: 105vw;
     }
-    hr{
-        width: 125vw;
-    }
-    
     footer h1 {
         text-align: center;
-        justify-content: center;
         color: var(--text-clr2);
-        align-items: center;
-        margin-left:50px ;
+    
     }
 }
