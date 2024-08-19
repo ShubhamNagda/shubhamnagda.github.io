@@ -90,12 +90,13 @@ input {
     input {
         width: 240px;
         height: 45px;
-        font-size: 38px;
+        font-size: 28px;
         font-weight: bolder;
         padding-left: 0px;
     }
     .container {
         display: block;
         padding: 30px;
+        margin-top:40px;
     }
 }
