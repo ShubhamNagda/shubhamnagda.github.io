@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: block;
+    padding: 50px;
+    margin-top: 19px;
+    border-radius: 15px;
+    box-shadow: none;
+    border: 2px solid white;
+}
+
+button {
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    margin: 0px 14px 0px 14px;
+    border-radius: 15px;
+}
+
+input {
+    width: 655px;
+    height: 45px;
+    border-radius: 15px;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+#cStone,
+#cScissor,
+#cPaper {
+    cursor: not-allowed;
+}
+
+@media screen and (max-width:830px) {
+    button {
+        width: 120px;
+        height: 50px;
+        margin: 0px 3px 0px 3px;
+    }
+
+    input {
+        width: 380px;
+        height: 45px;
+        font-size: 35px;
+        font-weight: bolder;
+        padding-left: 0px;
+    }
+    .container {
+        display: block;
+        padding: 30px;
+    }
+}
